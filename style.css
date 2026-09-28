@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  background-color: #fff5e1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  padding-right: 20px;
+}
+
+.logo img {
+  width: 70px;
+}
+
+.menu img {
+  width: 30px;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .menu img {
+    width: 40px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .menu {
+    padding-right: 40px;
+  }
+
+  .menu img {
+    width: 50px;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+}
