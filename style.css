@@ -189,15 +189,147 @@ nav {
 
   .hero-image img {
     max-width: 550px;
+    transform: translateY(-30px);   
   }
 
   .hero-content {
     align-items: flex-start;
     text-align: left;
-    gap: 40px;
+    gap: 30px;
   }
 
   .hero-title {
     font-size: 3.5rem;
+  }
+}
+
+/* FOOTER: MOBILE */
+footer {
+  display: flex;
+  flex-direction: column;    
+  align-items: center;
+  gap: 30px;
+  padding: 30px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #5a4a42;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;    
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  gap: 10px;
+}
+
+.footer-brand img {
+  width: 100%;
+  max-width: 200px;          
+}
+
+.footer-logo {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  color: #444;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;    
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-heading {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.footer-column ul {
+  list-style: none;          
+  display: flex;
+  flex-direction: column;
+  gap: 12px;                 
+}
+
+.footer-column a {
+  text-decoration: none;     
+  color: #5a4a42;
+  font-size: 0.9rem;
+}
+
+.footer-column a:hover {
+  color: #ff8fa3;            
+}
+
+.footer-address {
+  font-style: normal;        
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.footer-copy {
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* FOOTER: TABLET */
+@media (min-width: 768px) {
+  .footer-links {
+    flex-direction: row;     
+    flex-wrap: wrap;         
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 40px;
+    text-align: left;
+  }
+
+  .footer-brand img {
+    max-width: 240px;
+  }
+}
+
+/* FOOTER: DESKTOP */
+@media (min-width: 1024px) {
+  footer {
+    padding: 30px 40px;
+  }
+
+  .footer-top {
+    flex-direction: row;            
+    justify-content: center;
+    align-items: center;            
+    gap: 170px;
+  }
+
+  .footer-brand img {
+    max-width: 260px;
+  }
+
+  .footer-brand{
+     transform: translateY(-10px);   
+  }
+
+  .footer-links {
+    flex-wrap: nowrap;              
+    align-items: flex-start;        
+    gap: 80px;
   }
 }
