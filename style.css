@@ -9,11 +9,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
 }
 
 body {
   background-color: #fff5e1;
+   font-family: "Poppins", sans-serif;  
 }
 
 header {
@@ -87,10 +87,13 @@ nav {
   font-family: "Lobster", cursive;
   font-size: 2.5rem;
   color: #444;
+  font-weight: 700;
 }
 
 .highlight {
   color: #d8596c;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .hero-text {
@@ -133,9 +136,10 @@ nav {
 }
 
 .right-sec {
-  margin-top: 10px;
   text-align: center;
-  padding: 0px 40px 0px 40px;
+  padding: 80px 40px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .right-sec p {
@@ -143,7 +147,7 @@ nav {
   margin-bottom: 20px;
 }
 
-.right-sec:last-child span {
+.values-section .right-sec span {
   font-size: 18px;
 }
 
@@ -170,8 +174,8 @@ nav {
 
 .disc {
   background-color: var(--text);
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -193,6 +197,18 @@ nav {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+}
+
+.brand-name {
+  font-size: inherit;      
+  font-weight: 700;        
+  font-style: italic;      
+  color: #5a4a42;             
+}
+
+.brand-name .highlight {
+  font-weight: 700;        
+  color: #d8596c;          
 }
 
 /* TABLET */
@@ -235,11 +251,7 @@ nav {
     margin: 30px auto;
   }
 
-  .highlight {
-    font-size: 90px;
-  }
-
-  .btn {
+  .hero-btn {
     font-size: 18px;
     padding: 10px 30px;
   }
@@ -256,7 +268,7 @@ nav {
   }
 
   .right-sec ul li p{
-    font-size: 20px;
+    font-size: 16px;;
   }
 }
 
@@ -317,7 +329,7 @@ nav {
     margin: 30px auto;
   }
 
-  .btn {
+  .hero-btn {
     font-size: 18px;
     padding: 10px 30px;
     margin-top: 20px;
@@ -325,7 +337,7 @@ nav {
 
   .right-sec {
     margin: 0px 40px;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .welcome-section,
@@ -347,7 +359,7 @@ nav {
   }
 
   .right-sec ul li p{
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -386,6 +398,7 @@ footer {
   font-family: "Lobster", cursive;
   font-size: 2rem;
   color: #444;
+  font-weight: 700;
 }
 
 .footer-links {
