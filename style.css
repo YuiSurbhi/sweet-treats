@@ -140,6 +140,11 @@ nav {
   margin-bottom: 20px;
 }
 
+.story-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
 /* TABLET */
 @media (min-width: 768px) {
   .menu i {
