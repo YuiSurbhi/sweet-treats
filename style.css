@@ -325,7 +325,7 @@ nav {
   }
 
   .left-sec {
-    width: 60%;
+    width: 40%;
     margin: 30px auto;
   }
 
@@ -492,5 +492,154 @@ footer {
     flex-wrap: nowrap;              
     align-items: flex-start;        
     gap: 80px;
+  }
+}
+
+/* Menu Section */
+/* ---------- MENU: MOBILE FIRST ---------- */
+.filter-bar {
+  display: flex;
+  flex-direction: column;              /* title above links on phones */
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+  padding: 12px 20px;
+  border: 1px solid var(--text);
+  border-radius: 6px;
+}
+
+.filter-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.filter-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;                     /* links drop to the next line on small screens */
+  justify-content: center;
+  gap: 8px 20px;
+}
+
+.filter-list a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.85rem;
+}
+
+.filter-list a:hover {
+  font-weight: 600;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr;          /* 1 column on phones */
+  justify-items: center;               /* centers each card in its column */
+  gap: 35px;
+  padding: 30px 20px;
+  max-width: 1100px;                    /* stops the grid stretching on huge screens */
+  margin: 0 auto;
+}
+
+.menu-card {
+  width: 100%;
+  max-width: 260px;                    /* stops cards stretching too wide */
+  transition: 0.3s ease-in-out;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);         /* small lift on hover */
+}
+
+.menu-card:nth-child(3n+2),
+.menu-card:nth-child(3n) {
+  display: none;       /* keeps only cards 1, 4, 7 */
+}
+
+.card-image {
+  border: 3px solid var(--primary);    /* pink frame */
+  border-radius: 12px;
+  padding: 8px;                        /* space between frame and photo */
+}
+
+.card-image img {
+  width: 100%;
+  height: 200px;                       /* same height for every photo */
+  object-fit: cover;                   /* crops instead of squishing */
+  display: block;
+  border-radius: 10px;
+}
+
+.card-info {
+  display: flex;                       /* name and button side by side */
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.card-name {
+  flex: 1;                             /* name pill takes the leftover space */
+  background-color: var(--highlight);  /* dark gray */
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 7px 14px;
+  border-radius: 20px 20px 4px 20px;   /* top-left, top-right, bottom-right, bottom-left */
+}
+
+.card-btn {
+  background-color: var(--primary);
+  color: var(--text);
+  font-size: 0.8rem;
+  text-decoration: none;
+  padding: 7px 14px;
+  border-radius: 20px;
+}
+
+.view-more {
+  display: block;
+  width: fit-content;          /* box shrinks to the text, so auto margins can center it */
+  margin: 30px auto;
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem;
+  font-weight: 400;            /* Lobster has one real weight */
+  text-decoration: none;
+  color: #444;                 /* dark gray, so "More" is dark */
+  transition: 0.3s ease-in-out;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+  .filter-bar {
+    flex-direction: row;               /* FILTER left, links right */
+    justify-content: space-between;
+  }
+  
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 50px;                    /* row gap, column gap */
+    padding: 40px;
+  }
+
+  .menu-card:nth-child(3n) {
+    display: none;          /* hides cards 3, 6, 9 */
+  }
+
+  @media (min-width: 768px) {
+  .menu-card:nth-child(3n+2) {
+    display: block;    /* show cards 2, 5, 8 again */
+  }
+}
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr);   /* 3 equal columns */
+    gap: 50px 70px;                         /* row gap, then column gap */
+  }
+
+  .menu-card:nth-child(3n) {
+    display: block;         /* show all cards again */
   }
 }
