@@ -470,7 +470,7 @@ nav {
 
   .event-img {
     height: 500px;
-    width: 80%;
+    width: 70%;
   }
 
   .event-para {
@@ -623,7 +623,7 @@ footer {
 /* ---------- MENU: MOBILE FIRST ---------- */
 .filter-bar {
   display: flex;
-  flex-direction: column; /* title above links on phones */
+  flex-direction: column; 
   align-items: center;
   gap: 10px;
   margin: 20px;
@@ -641,7 +641,7 @@ footer {
 .filter-list {
   list-style: none;
   display: flex;
-  flex-wrap: wrap; /* links drop to the next line on small screens */
+  flex-wrap: wrap; 
   justify-content: center;
   gap: 8px 20px;
 }
@@ -658,57 +658,57 @@ footer {
 
 .menu-grid {
   display: grid;
-  grid-template-columns: 1fr; /* 1 column on phones */
-  justify-items: center; /* centers each card in its column */
+  grid-template-columns: 1fr; 
+  justify-items: center; 
   gap: 35px;
   padding: 30px 20px;
-  max-width: 1100px; /* stops the grid stretching on huge screens */
+  max-width: 1100px; 
   margin: 0 auto;
 }
 
 .menu-card {
   width: 100%;
-  max-width: 260px; /* stops cards stretching too wide */
+  max-width: 260px; 
   transition: 0.3s ease-in-out;
 }
 
 .menu-card:hover {
-  transform: translateY(-5px); /* small lift on hover */
+  transform: translateY(-5px); 
 }
 
 .menu-card:nth-child(3n + 2),
 .menu-card:nth-child(3n) {
-  display: none; /* keeps only cards 1, 4, 7 */
+  display: none; 
 }
 
 .card-image {
-  border: 3px solid var(--primary); /* pink frame */
+  border: 3px solid var(--primary); 
   border-radius: 12px;
-  padding: 8px; /* space between frame and photo */
+  padding: 8px; 
 }
 
 .card-image img {
   width: 100%;
-  height: 200px; /* same height for every photo */
-  object-fit: cover; /* crops instead of squishing */
+  height: 200px; 
+  object-fit: cover; 
   display: block;
   border-radius: 10px;
 }
 
 .card-info {
-  display: flex; /* name and button side by side */
+  display: flex; 
   align-items: center;
   gap: 6px;
   margin-top: 8px;
 }
 
 .card-name {
-  flex: 1; /* name pill takes the leftover space */
-  background-color: var(--highlight); /* dark gray */
+  flex: 1; 
+  background-color: var(--highlight); 
   color: #fff;
   font-size: 0.8rem;
   padding: 7px 14px;
-  border-radius: 20px 20px 4px 20px; /* top-left, top-right, bottom-right, bottom-left */
+  border-radius: 20px 20px 4px 20px; 
 }
 
 .card-btn {
@@ -722,36 +722,36 @@ footer {
 
 .view-more {
   display: block;
-  width: fit-content; /* box shrinks to the text, so auto margins can center it */
+  width: fit-content;
   margin: 30px auto;
   font-family: "Lobster", cursive;
   font-size: 1.5rem;
-  font-weight: 400; /* Lobster has one real weight */
+  font-weight: 400; 
   text-decoration: none;
-  color: #444; /* dark gray, so "More" is dark */
+  color: #444; 
   transition: 0.3s ease-in-out;
 }
 
 /* TABLET */
 @media (min-width: 768px) {
   .filter-bar {
-    flex-direction: row; /* FILTER left, links right */
+    flex-direction: row; 
     justify-content: space-between;
   }
 
   .menu-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 35px 50px; /* row gap, column gap */
+    gap: 35px 50px; 
     padding: 40px;
   }
 
   .menu-card:nth-child(3n) {
-    display: none; /* hides cards 3, 6, 9 */
+    display: none; 
   }
 
   @media (min-width: 768px) {
     .menu-card:nth-child(3n + 2) {
-      display: block; /* show cards 2, 5, 8 again */
+      display: block;
     }
   }
 }
@@ -759,12 +759,12 @@ footer {
 /* DESKTOP */
 @media (min-width: 1024px) {
   .menu-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    gap: 50px 70px; /* row gap, then column gap */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px 70px; 
   }
 
   .menu-card:nth-child(3n) {
-    display: block; /* show all cards again */
+    display: block; 
   }
 }
 
