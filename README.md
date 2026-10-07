@@ -10,6 +10,7 @@ An ice cream website, **Sweet Treats**, where each scoop is full of taste, love,
 * Discover our event and catering services.
 * Read our blogs to explore more about ice cream and our treats.
 * Enjoy a simple and visually appealing ice cream website experience.
+* We made the website responsive so it can be viewed on phones, tablets, and desktops.
 
 ## Collaborative Project
 
